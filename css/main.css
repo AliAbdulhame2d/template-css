@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+ .page {
+    display: flex;
+    min-height: 100vh;
+    background-color: #F1F5F9;
+ }
+
+/* Start Sidebar */
+.sidebar {
+    width: 250px;
+    padding: 20px;
+    position: relative;
+    background-color: white;
+    box-shadow: 0 0 10px #DDD;
+}
+
+.sidebar > h3 {
+    margin-top: 0px;
+    margin-bottom: 50px;
+    text-align: center;
+    position: relative;
+}
+
+/* make a Line after the Header */
+.sidebar > h3::before {
+    content: '';
+    width: 80px;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    bottom: -20px;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+ul {
+    padding: 0px;
+    list-style: none;
+}
+
+ul li a {   
+    display: flex; 
+    align-items: center;    
+    padding: 10px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: black;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+ul li a span {
+    font-size: 14px;
+    margin-left: 10px;
+} 
+
+ul li a:hover, ul li a.active {
+    background-color: #F6F6F6;
+    transition: 0.3s;
+}
+/* End Sidebar */
+
+/* Start Content */
+.content {
+    width: 100%;
+    overflow: hidden;
+}
+
+.content .head { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background: white; 
+}
+
+/*Start Search Feld*/
+.head .search {
+    position: relative;
+}
+
+.head .search::before {
+    font-family: var(--fa-style-family-classic);
+    content: '\f002';
+    font-weight: 900;
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: gray;
+}
+
+.head .search > input {
+    padding: 10px;
+    margin-left: 5px;
+    padding-left: 30px;
+    width: 160px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    transition: width 0.3s;
+}
+
+.head .search > input:focus {
+ 
+}
+
+.head .search > input:focus::placeholder {
+
+}
+/* End Search Feld */
+
+.head .icons {
+    display: flex;
+    align-items: center;
+}
+
+/* End Content */
+
+@media(max-width: 767px) {
+    .sidebar {
+        width: 58px;
+        padding: 10px;
+    }
+
+    .sidebar > h3 {
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+
+   .sidebar ul li a span,
+   .sidebar > h3::before {
+        display: none;
+    }
+
+  
+}
