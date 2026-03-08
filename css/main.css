@@ -110,11 +110,12 @@ ul li a:hover, ul li a.active {
 }
 
 .head .search > input:focus {
- 
+    width: 200px;
+    outline-color: red;
 }
 
 .head .search > input:focus::placeholder {
-
+opacity: 0;
 }
 /* End Search Feld */
 
@@ -123,6 +124,26 @@ ul li a:hover, ul li a.active {
     align-items: center;
 }
 
+.head .icons .notification {
+    position: relative;
+}
+
+.head .icons .notification::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    right: -5px;
+    top: -5px;
+}
+
+.head .icons img {
+    width: 32px;
+    height: 32px;
+    margin-left: 10px;
+}
 /* End Content */
 
 @media(max-width: 767px) {
