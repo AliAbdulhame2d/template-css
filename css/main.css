@@ -13,6 +13,18 @@ body {
     background-color: #F1F5F9;
  }
 
+ ::-webkit-scrollbar {
+    width: 7px;
+ }
+
+ ::-webkit-scrollbar-track {
+    background-color: white;
+ }
+
+ ::-webkit-scrollbar-thumb{
+    background-color: #CCC;
+ }
+
 /* Start Sidebar */
 .sidebar {
     width: 250px;
@@ -87,14 +99,15 @@ ul li a:hover, ul li a.active {
     position: relative;
 }
 
-.head .search::before {
-    font-family: var(--fa-style-family-classic);
+.head .search::before { 
     content: '\f002';
     font-weight: 900;
     position: absolute;
     left: 15px;
     top: 50%;
     transform: translateY(-50%);
+    font-family: var(--fa-style-family-classic);
+    
     font-size: 14px;
     color: gray;
 }
@@ -115,7 +128,7 @@ ul li a:hover, ul li a.active {
 }
 
 .head .search > input:focus::placeholder {
-opacity: 0;
+    opacity: 0;
 }
 /* End Search Feld */
 
@@ -128,6 +141,7 @@ opacity: 0;
     position: relative;
 }
 
+/* A red circle above the icon */
 .head .icons .notification::before {
     content: "";
     width: 10px;
@@ -144,6 +158,31 @@ opacity: 0;
     height: 32px;
     margin-left: 10px;
 }
+
+.content h1 {
+    position: relative;
+    margin: 20px 20px 40px 20px;
+}
+.content h1::before,
+.content h1::after
+ {
+    content:""; 
+    height: 3px;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+}
+
+.content h1::before {
+    background-color: white;
+    width: 120px;
+}
+
+.content h1::after {
+    background-color: black;
+    width: 40px;
+}
+
 /* End Content */
 
 @media(max-width: 767px) {
