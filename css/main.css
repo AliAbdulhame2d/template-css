@@ -190,13 +190,35 @@ ul li a:hover, ul li a.active {
     margin: 0 20px;
 }
 
-.wrapper .welcome {
+.welcome {
     background-color: white;
     border-radius: 10px;
     padding: 10px;
 }
 
 
+.welcome .intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color:#EEE;
+
+}
+
+.welcome .intro > div h2 {
+    margin: 0;
+}
+
+.welcome .intro > div p {
+    margin-top: 5px;
+    color: gray;
+}
+
+.welcome .intro > img {
+    width: 75px;
+    
+}
 /* End Content */
 
 @media(max-width: 767px) {
