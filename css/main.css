@@ -191,11 +191,21 @@ ul li a:hover, ul li a.active {
 }
 
 .welcome {
-    background-color: white;
     border-radius: 10px;
-    padding: 10px;
+    background-color: white;
+    overflow: hidden;
 }
 
+.welcome .avatar {
+    width: 64px;
+    height: 64px;
+    padding: 2px;
+    margin-left: 20px;
+    border: 2px solid white;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #DDD;
+    margin-top: -32%;
+}
 
 .welcome .intro {
     display: flex;
@@ -216,9 +226,47 @@ ul li a:hover, ul li a.active {
 }
 
 .welcome .intro > img {
-    width: 75px;
+    width: 170px;
+    margin-bottom: -37px;
     
 }
+
+.welcome .body {
+    display: flex;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+    border-top: 1px solid #EEE;
+    border-bottom: 1px solid #EEE;
+}
+
+.welcome .body > div {
+    flex: 1;
+}
+
+.welcome .body span {
+    display: block;
+    margin-top: 10px;
+    color: gray;
+    font-size: 14px;
+}
+
+.visit {
+    display: block; /*damit es padding und margin akzeptiert*/
+    padding: 3px;
+    margin: 0 15px 15px auto;
+    width: fit-content;
+    font-size: 14px;
+    border-radius: 6px;
+    transition: 0.3s;
+    color: white;
+    background-color: rgb(56, 56, 155);
+}
+
+.visit:hover {
+   background-color: blue;
+}
+  
 /* End Content */
 
 @media(max-width: 767px) {
@@ -247,5 +295,17 @@ ul li a:hover, ul li a.active {
   .wrapper .welcome {
         text-align: center;
         display: block;
+    }
+
+    .welcome .body {
+        display: block;
+    }
+    
+    .welcome .intro {
+        padding-bottom: 30px;
+    }
+
+    .welcome .intro > img {
+        display: none;
     }
 }
