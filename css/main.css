@@ -259,6 +259,7 @@ ul li a:hover, ul li a.active {
     font-size: 14px;
     border-radius: 6px;
     transition: 0.3s;
+    text-decoration: none;
     color: white;
     background-color: rgb(56, 56, 155);
 }
