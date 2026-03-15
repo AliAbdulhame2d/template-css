@@ -296,10 +296,6 @@ ul li a:hover, ul li a.active {
         text-align: center;
         display: block;
     }
-
-    .welcome .body {
-        display: block;
-    }
     
     .welcome .intro {
         padding-bottom: 30px;
@@ -307,5 +303,17 @@ ul li a:hover, ul li a.active {
 
     .welcome .intro > img {
         display: none;
+    } 
+
+    .welcome .avatar {
+        margin-left: 0px;
+    }
+    
+    .welcome .body {
+        display: block;
+    }
+
+    .welcome .body > div:not(:last-child) {
+        margin-bottom: 20px;
     }
 }
