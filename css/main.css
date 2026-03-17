@@ -259,7 +259,7 @@ ul li a:hover, ul li a.active {
     font-size: 14px;
     border-radius: 6px;
     transition: 0.3s;
-    text-decoration: none;
+    text-decoration: none; 
     color: white;
     background-color: rgb(56, 56, 155);
 }
@@ -267,7 +267,31 @@ ul li a:hover, ul li a.active {
 .visit:hover {
    background-color: blue;
 }
-  
+
+.quick-draft {
+   padding: 20px;
+   border-radius: 10px;
+   background-color: white;
+}
+
+.quick-draft h2 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+ }
+
+ .quick-draft p {
+    padding-top: 0px;
+    padding-bottom: 20px;
+    font-size: 15px;
+    color: gray;
+ }
+
+ .quick-draft form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+ }
+
 /* End Content */
 
 @media(max-width: 767px) {
