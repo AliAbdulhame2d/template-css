@@ -286,7 +286,10 @@ ul li a:hover, ul li a.active {
     border-radius: 6px;
     background-color: #EEE;
  }
-
+ .quick-draft form textarea {
+    height: 180px;
+    resize: none;
+ }
 
 /* End Content */
 
