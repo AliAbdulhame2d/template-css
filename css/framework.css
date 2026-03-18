@@ -1,2 +1,16 @@
-/* Start Box */
 
+.btn-shape {
+    padding: 4px 10px;
+    margin-left: auto;
+    width: fit-content;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+    background-color: blue;
+}
+
+.btn-shape:hover {
+    background-color:  rgb(56, 56, 155);
+}

@@ -213,7 +213,6 @@ ul li a:hover, ul li a.active {
     justify-content: space-between;
     padding: 20px;
     background-color:#EEE;
-
 }
 
 .welcome .intro > div h2 {
@@ -227,8 +226,7 @@ ul li a:hover, ul li a.active {
 
 .welcome .intro > img {
     width: 170px;
-    margin-bottom: -37px;
-    
+    margin-bottom: -37px; 
 }
 
 .welcome .body {
@@ -251,21 +249,11 @@ ul li a:hover, ul li a.active {
     font-size: 14px;
 }
 
-.visit {
-    display: block; /*damit es padding und margin akzeptiert*/
-    padding: 3px;
+.visit { /*..Link Type..*/
+    display: block; /* damit es padding und margin akzeptiert */
     margin: 0 15px 15px auto;
-    width: fit-content;
-    font-size: 14px;
-    border-radius: 6px;
     transition: 0.3s;
-    text-decoration: none; 
-    color: white;
-    background-color: rgb(56, 56, 155);
-}
-
-.visit:hover {
-   background-color: blue;
+    text-decoration: none;
 }
 
 .quick-draft {
@@ -291,6 +279,14 @@ ul li a:hover, ul li a.active {
     flex-direction: column;
     gap: 20px;
  }
+
+ .quick-draft form input:not([type='button']), .quick-draft form textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: #EEE;
+ }
+
 
 /* End Content */
 
